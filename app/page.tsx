@@ -117,7 +117,7 @@ export default function GreetingCardGenerator({searchParams}: PageProps) {
               </div>
 
               <h1
-                className={`text-7xl font-black bg-gradient-to-r ${selectedOccasionData.gradient} bg-clip-text text-transparent mb-6 text-balance leading-tight`}
+                className={`text-5xl font-black bg-gradient-to-r ${selectedOccasionData.gradient} bg-clip-text text-transparent mb-6 text-balance leading-tight`}
               >
                 {selectedOccasionData.label}
               </h1>
@@ -190,7 +190,7 @@ export default function GreetingCardGenerator({searchParams}: PageProps) {
               Greeting Card Generator
             </h1>
             <p className="text-gray-600 text-pretty text-lg font-medium">
-              Create a personalized greeting card for someone special ✨
+              Kung sino ka man pili ka nalang dito 🥳
             </p>
           </div>
 
