@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowLeft, Calendar, Gift, Heart, Sparkles, Star } from "lucide-react"
+import { ArrowLeft, Briefcase, Calendar, Gift, Heart, Sparkles, Star } from "lucide-react"
 import { useState } from "react"
 
 const occasions = [
@@ -39,6 +39,14 @@ const occasions = [
     bgColor: "bg-gradient-to-br from-rose-50 to-pink-50",
     borderColor: "border-rose-200 hover:border-rose-300",
   },
+  {
+    id: "hired",
+    label: "New Job",
+    icon: Briefcase,
+    gradient: "from-green-500 via-blue-500 to-indigo-600",
+    bgColor: "bg-gradient-to-br from-green-50 to-blue-50",
+    borderColor: "border-green-200 hover:border-green-300",
+  }
 ]
 
 interface PageProps {
@@ -154,6 +162,11 @@ export default function GreetingCardGenerator({searchParams}: PageProps) {
                   <p className="text-pretty font-medium">
                     💕 Sending you love and warm wishes on this special day. You deserve all the love and happiness in
                     the world! 💖
+                  </p>
+                )}
+                {selectedOccasion === "hired" && (
+                  <p className="text-pretty font-medium">
+                    🎉 Congratulations on your new job! Corporate mothafucka! 🚀
                   </p>
                 )}
               </div>
